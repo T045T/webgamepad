@@ -56,4 +56,11 @@ i2DX.layout('towerfall', function(ui) {
 	width: '25vmin',
 	height: '30vmin',
     });
+
+    ui.elementButton('towerfall_start', {
+	right: '45%',
+	top: '0px',
+	width: '10%',
+	height: '13vmin',
+    });
 });
