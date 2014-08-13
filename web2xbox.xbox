@@ -1,0 +1,23 @@
+# xboxdrv config file
+# The input keys used are defined in ./wmgeneric.conf
+# This configuration file tries to map a Wii remote held sideways
+# to a virtual xbox controller. It is incomplete but works for Towerfall.
+
+[xboxdrv]
+
+# event device currently found by the wmtowerfall script and passed as a
+# command-line argument.
+
+evdev-grab=true
+silent = true
+dpad-as-button = true
+
+[evdev-keymap]
+KEY_J = x
+KEY_K = a
+KEY_L = rb
+KEY_N = start
+KEY_W = du
+KEY_A = dl
+KEY_S = dd
+KEY_D = dr
