@@ -9,7 +9,7 @@
 # command-line argument.
 
 evdev-grab=true
-silent = true
+#silent = true
 dpad-as-button = true
 
 [evdev-keymap]

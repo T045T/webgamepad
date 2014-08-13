@@ -112,8 +112,7 @@ sed 's+[><]\ event+event+') # FIXME
 
 	echo -e "Web controller is on $event, starting xboxdrv."
 
-	xboxdrv -c $xconfig \ # See xboxdrv documentation.
---evdev /dev/input/$event > /dev/null &
+	xboxdrv -c $xconfig --evdev /dev/input/$event > /dev/null &
 # XXX: This --axismap should be in the config file.
 # --silent xboxdrv is kinda loud...
 
@@ -133,8 +132,6 @@ echo "Press Ctrl-C or \"q\" to disconnect controllers and exit."
 # We exit with SIGINT regardless, so make it look nice.
 # Basically the same INT handler as at the beginning but with exit 0.
 trap "echo -e \"\nCompleted successfully, cleaning up.\"
-killall -s SIGKILL wminput 2> /dev/null
-sleep 1
 killall -s SIGKILL xboxdrv 2> /dev/null
 rm .event.tmp 2>/dev/null
 exit 0" INT 
