@@ -202,3 +202,74 @@ body.layout-popn h1
 	background: #8b8685;
 	border-color: #bef;
 }
+
+/* style for towerfall */
+.towerfall_up,
+.towerfall_down,
+.towerfall_left,
+.towerfall_right
+{
+	border: 4px solid #666666;
+	background: #777777;
+}
+
+.towerfall_up.state-pressed,
+.towerfall_down.state-pressed,
+.towerfall_left.state-pressed,
+.towerfall_right.state-pressed
+{
+    border-color: #222222;
+    background: #090909;
+}
+
+.towerfall_jump
+{
+    border: 4px solid #666666;
+    background: #22CC26;
+}
+.towerfall_jump.state-pressed
+{
+    background: #126E14;
+    border-color: #222222;
+}
+.towerfall_shoot
+{
+    border: 4px solid #666666;
+    background: #FF3A1A;
+}
+.towerfall_shoot.state-pressed
+{
+    background: #AD2712;
+    border-color: #222222;
+}
+
+.towerfall_dash1,
+.towerfall_dash2
+{
+    border: 4px solid #666666;
+    background: #CC5801;
+    
+}
+
+.towerfall_dash1.state-pressed,
+.towerfall_dash2.state-pressed
+{
+    background: #994201;
+    border-color: #222222;
+}
+.taiko_a1 { border-radius: 500px 0 0 500px; }
+.taiko_a2 { border-radius: 0 500px 500px 0; }
+
+.taiko_b1,
+.taiko_b2 {
+	background: #252423;
+}
+
+.taiko_a1.state-pressed,
+.taiko_a2.state-pressed,
+.taiko_b1.state-pressed,
+.taiko_b2.state-pressed
+{
+	background: #8b8685;
+	border-color: #bef;
+}
