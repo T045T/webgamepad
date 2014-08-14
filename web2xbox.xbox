@@ -11,6 +11,7 @@
 evdev-grab=true
 #silent = true
 dpad-as-button = true
+mimic-xpad = true
 
 [evdev-keymap]
 KEY_J = a
