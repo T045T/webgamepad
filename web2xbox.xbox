@@ -16,6 +16,7 @@ dpad-as-button = true
 KEY_J = a
 KEY_K = x
 KEY_L = rb
+KEY_M = lb
 KEY_N = start
 KEY_W = du
 KEY_A = dl
