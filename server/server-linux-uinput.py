@@ -16,7 +16,11 @@ class I2DXWebSocketUInput(libi2dx.I2DXWebSocket):
 
     def toggle_key(self, key_id, active, player):
         if player not in self.devicemap:
-            self.devicemap[player] = uinput.Device(self.keys)
+            self.devicemap[player] = uinput.Device(self.keys,
+                                                   'web_kbd%s' % player,
+                                                   0x01,  # BUS_USB from linux/input.h
+                                                   0x1337,  # fake vendor id
+                                                   0x1337)  # fake device id
         if active:
             active = 1
         else:
