@@ -15,7 +15,7 @@ class I2DXWebSocketUInput(libi2dx.I2DXWebSocket):
     devicemap = {}
 
     def toggle_key(self, key_id, active, player):
-        if player not in self.devicemap():
+        if player not in self.devicemap:
             self.devicemap[player] = uinput.Device(self.keys)
         if active:
             active = 1
