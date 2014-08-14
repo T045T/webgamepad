@@ -34,13 +34,17 @@ i2DX.events.ButtonHandler.prototype = {
 		return {
 			move: function(touch) {
 				if (touch.identifier === id && !that._checkBounds(touch)) {
-					this.release();
+					this.release(touch);
 					return false;
 				}
 				return true;
 			},
-			release: function() {
-				that._up();
+			release: function(touch) {
+				var _id = touch.identifier || undefined;
+				if (_id === id)
+				{
+					that._up();
+				}
 			}
 		};
 	},
