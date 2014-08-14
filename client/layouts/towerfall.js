@@ -2,43 +2,43 @@
 i2DX.layout('towerfall', function(ui) {
 
     ui.elementButton('towerfall_up', {
-	left: '35vmin',
-	bottom: '51vmin',
+	left: '30vmin',
+	bottom: '47vmin',
 	width: '16vmin',
 	height: '25vmin',
     });
 
     ui.elementButton('towerfall_down', {
-	left: '35vmin',
-	bottom: '10vmin',
+	left: '30vmin',
+	bottom: '6vmin',
 	width: '16vmin',
 	height: '25vmin',
     });
 
     ui.elementButton('towerfall_left', {
-	left: '10vmin',
-	bottom: '35vmin',
+	left: '5vmin',
+	bottom: '31vmin',
 	width: '25vmin',
 	height: '16vmin',
     });
 
     ui.elementButton('towerfall_right', {
-	left: '51vmin',
-	bottom: '35vmin',
+	left: '46vmin',
+	bottom: '31vmin',
 	width: '25vmin',
 	height: '16vmin',
     });
 
     ui.elementButton('towerfall_jump', {
-	right: '35vmin',
-	bottom: '10vmin',
+	right: '10vmin',
+	bottom: '6vmin',
 	width: '20vmin',
 	height: '20vmin',
     });
 
     ui.elementButton('towerfall_shoot', {
-	right: '10vmin',
-	bottom: '30vmin',
+	right: '35vmin',
+	bottom: '28vmin',
 	width: '20vmin',
 	height: '20vmin',
     });
@@ -58,9 +58,9 @@ i2DX.layout('towerfall', function(ui) {
     });
 
     ui.elementButton('towerfall_start', {
-	right: '45%',
+	right: '40%',
 	top: '0px',
-	width: '10%',
+	width: '20%',
 	height: '13vmin',
     });
 });
