@@ -266,6 +266,13 @@ window.onload = function() {
 		['on', 'On']
 	], 'In hard mode, you can\'t slide between buttons.');
 
+        options.playerId = new Option('Player', [
+                ['1', '1'],
+                ['2', '2'],
+                ['3', '3'],
+                ['4', '4'],
+        ], 'Choose your player number. You should try to not have more than one person use each number, unless you *really* know what you're doing.');
+
 	document.getElementById('launch').onclick = function() {
 		var params = [];
 		for (var i in options) {
