@@ -13,8 +13,8 @@ evdev-grab=true
 dpad-as-button = true
 
 [evdev-keymap]
-KEY_J = x
-KEY_K = a
+KEY_J = a
+KEY_K = x
 KEY_L = rb
 KEY_N = start
 KEY_W = du
