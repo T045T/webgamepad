@@ -87,7 +87,8 @@ ls /dev/input > .event.tmp # XXX: The whole evdev ID process is a hack.
 
 # Loop through desired controllers.
 while [[ $ctrlctr -le $controllers ]]; do 
-
+        echo -e "Starting controller server\n"
+        python2 server/server-linux-uinput.py &
 	echo -e "\nConnecting web controller $ctrlctr\n"
 	let 'ctrlctr += 1'
 	
@@ -112,8 +113,7 @@ sed 's+[><]\ event+event+') # FIXME
 
 	echo -e "Web controller is on $event, starting xboxdrv."
 
-	xboxdrv -c $xconfig --evdev /dev/input/$event > /dev/null &
-# XXX: This --axismap should be in the config file.
+	xboxdrv --mimic-xpad -c $xconfig --evdev /dev/input/$event > /dev/null &
 # --silent xboxdrv is kinda loud...
 
 	sleep 1 # XXX: Part of the hack that grabs the event device.
