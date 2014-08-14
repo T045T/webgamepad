@@ -15,7 +15,7 @@ i2DX.events.ButtonHandler = function(component) {
 i2DX.events.ButtonHandler.prototype = {
 	check: function(touch) {
 		if (this._checkBounds(touch)) {
-			return this._createHandler();
+			return this._createHandler(touch.identifier);
 		}
 	},
 	_checkBounds: function(touch) {
@@ -28,12 +28,12 @@ i2DX.events.ButtonHandler.prototype = {
 		}
 		return false;
 	},
-	_createHandler: function() {
+	_createHandler: function(id) {
 		var that = this;
 		that._down();
 		return {
 			move: function(touch) {
-				if (!that._checkBounds(touch)) {
+				if (touch.identifier === id && !that._checkBounds(touch)) {
 					this.release();
 					return false;
 				}
