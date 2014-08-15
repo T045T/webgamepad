@@ -9,7 +9,7 @@ import sys
 import signal
 import os
 
-class I2DXWebSocketUInput(libi2dx.I2DXWebSocket):
+class XPadWebSocketUInput(libi2dx.I2DXWebSocket):
     btn_map = {
         "xbox_up": uinput.BTN_0,
         "xbox_down": uinput.BTN_1,
@@ -62,4 +62,4 @@ class I2DXWebSocketUInput(libi2dx.I2DXWebSocket):
         self.devicemap[player].emit(self.btn_map[key_id], active)
 
 if __name__ == "__main__":
-    libi2dx.serve(I2DXWebSocketUInput)
+    libi2dx.serve(XPadWebSocketUInput)
