@@ -14,7 +14,25 @@
 .xbox_right.state-pressed
 {
     border-color: #222222;
-    background: #090909;
+    background: #1e1e1e;
+}
+
+.xbox_upleft,
+.xbox_upright,
+.xbox_downleft,
+.xbox_downright
+{
+	border: 4px solid #444444;
+	background: #555555;
+}
+
+.xbox_upleft.state-pressed,
+.xbox_upright.state-pressed,
+.xbox_downleft.state-pressed,
+.xbox_downright.state-pressed
+{
+	border-color: #1d1d1d;
+	background: #191919;
 }
 
 .xbox_A
