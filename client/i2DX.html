@@ -15,6 +15,7 @@
 <script src=js/i2DX/ui/UI.js></script>
 <script src=js/i2DX/events/Touch.js></script>
 <script src=js/i2DX/events/ButtonHandler.js></script>
+<script src=js/i2DX/events/MultiKeyButtonHandler.js></script>
 <script src=js/i2DX/events/TurntableHandler.js></script>
 <script src=js/i2DX/events/RoundedButtonHandler.js></script>
 <script src=js/i2DX/events/ElementButtonHandler.js></script>
@@ -25,7 +26,7 @@
 
 (function() {
 	i2DX.setParam('skin', 'default');
-	i2DX.setParam('layout', 'iidx_left');
+	i2DX.setParam('layout', 'xbox-lite');
 	location.search.replace(/(\w+)=([^&]*)/g, function(all, k, v) {
 		i2DX.setParam(k, v);
 	});
@@ -37,4 +38,4 @@
 
 </head>
 <body onload="i2DX.initClient()" style="overflow:hidden; -ms-touch-action:none;">
-<h1>i2DX</h1>
+<h1>webpad</h1>
