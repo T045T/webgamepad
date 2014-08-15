@@ -43,6 +43,18 @@ i2DX.ui.UI.prototype = {
   },
 
   /**
+   * Adds a multi key button to the UI.
+   * @param {String} name name of the button.
+   * @param {Array[String]} keys the list of keys that will be activated by this button
+   * @param {Object} style the style to pass to i2DX.ui.Component#button
+   */
+  multiKeyButton: function(name, keys, style, player) {
+    player = player || this._defaultPlayer;
+    var component = new i2DX.ui.Component(name, style, player);
+    this.add(component, new i2DX.events.MultiKeyButtonHandler(component, keys));
+  },
+
+  /**
    * Adds a rounded button to the UI.
    * @param {String} name name of the button.
    * @param {Object} style the style to pass to i2DX.ui.Component#button
