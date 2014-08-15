@@ -9,7 +9,7 @@ Installation
 To get started, you need to install `xboxdrv`, `python-uinput` and `tornado`. Let's start with `xboxdrv`:
 
 * Ubuntu / Debian / SteamOS
-`$ sudo apt-get install xboxdrv'
+`$ sudo apt-get install xboxdrv`
 * Arch
 `$ sudo pacman -S xboxdrv`
 And so on. Basically, use your package manager to get it.
