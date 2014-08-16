@@ -156,9 +156,9 @@ i2DX.ui.UI.prototype = {
         var id = started[i].identifier;
         if (this._touches[id]) {
           this._touches[id].release();
-          this._touches[id] = new i2DX.events.Touch(id);
-          this._touches[id].move(started[i]);
         }
+        this._touches[id] = new i2DX.events.Touch(id);
+        this._touches[id].move(started[i]);
       }
 
     } else if (e.type == 'touchmove') {
