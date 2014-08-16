@@ -158,7 +158,7 @@ i2DX.ui.UI.prototype = {
           this._touches[id].release();
         }
         this._touches[id] = new i2DX.events.Touch(id);
-        this._touches[id].move(started[i]);
+        this._touches[id].move(started[i], this._handlers);
       }
 
     } else if (e.type == 'touchmove') {
@@ -166,7 +166,7 @@ i2DX.ui.UI.prototype = {
       for (var i = 0; i < moved.length; i++) {
         var id = moved[i].identifier;
         if (this._touches[id]) {
-          this._touches[id].move(moved[i]);
+          this._touches[id].move(moved[i], this._handlers);
         }
       }
 
