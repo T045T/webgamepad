@@ -40,7 +40,7 @@ i2DX.events.ButtonHandler.prototype = {
 				return true;
 			},
 			release: function(touch) {
-				var _id = touch.identifier || undefined;
+				var _id = touch.identifier;
 				if (_id === id)
 				{
 					that._up();
