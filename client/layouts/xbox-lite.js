@@ -29,33 +29,33 @@ i2DX.layout('xbox-lite', function(ui) {
     height: '16vmin',
   });
 
-  ui.multiKeyButton('xbox_upleft', ['xbox_left', 'xbox_up'], {
-    left: '14vmin',
-    bottom: '47vmin',
-    width: '16vmin',
-    height: '16vmin'
-  });
+  // ui.multiKeyButton('xbox_upleft', ['xbox_left', 'xbox_up'], {
+  //   left: '14vmin',
+  //   bottom: '47vmin',
+  //   width: '16vmin',
+  //   height: '16vmin'
+  // });
 
-  ui.multiKeyButton('xbox_downleft', ['xbox_left', 'xbox_up'], {
-    left: '14vmin',
-    bottom: '15vmin',
-    width: '16vmin',
-    height: '16vmin'
-  });
+  // ui.multiKeyButton('xbox_downleft', ['xbox_left', 'xbox_up'], {
+  //   left: '14vmin',
+  //   bottom: '15vmin',
+  //   width: '16vmin',
+  //   height: '16vmin'
+  // });
 
-  ui.multiKeyButton('xbox_upright', ['xbox_left', 'xbox_up'], {
-    left: '46vmin',
-    bottom: '47vmin',
-    width: '16vmin',
-    height: '16vmin'
-  });
+  // ui.multiKeyButton('xbox_upright', ['xbox_left', 'xbox_up'], {
+  //   left: '46vmin',
+  //   bottom: '47vmin',
+  //   width: '16vmin',
+  //   height: '16vmin'
+  // });
 
-  ui.multiKeyButton('xbox_downright', ['xbox_left', 'xbox_up'], {
-    left: '46vmin',
-    bottom: '15vmin',
-    width: '16vmin',
-    height: '16vmin'
-  });
+  // ui.multiKeyButton('xbox_downright', ['xbox_left', 'xbox_up'], {
+  //   left: '46vmin',
+  //   bottom: '15vmin',
+  //   width: '16vmin',
+  //   height: '16vmin'
+  // });
 
   ui.roundedButton('xbox_A', {
     right: '28vmin',
