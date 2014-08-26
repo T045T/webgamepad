@@ -28,6 +28,6 @@ Getting started
 ============
 
 Easy as pie! Simply run
-`$ python2 server/xbox_web.py`
+`$ python2 server/webpad-server.py`
 and connect a web browser to `http://<your-ip>:9876`. You'll get a menu that lets you pick a controller layout (currently, there's only `xbox-lite`) and skin, as well as which player you are.
 Right now, you can only pick 1-4, and yes, that means multiple people can controle one controller. Hijinks may very much ensue.
