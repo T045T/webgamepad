@@ -7,10 +7,10 @@ mimic-xpad = true
 
 # map the virtual keyboard created by the i2DX server to Xbox controller buttons
 [evdev-keymap]
-BTN_A = a
-BTN_B = b
-BTN_X = x
-BTN_Y = y
+BTN_5 = a
+BTN_6 = b
+BTN_7 = x
+BTN_8 = y
 BTN_TL = lb
 BTN_TR = rb
 BTN_START = start
